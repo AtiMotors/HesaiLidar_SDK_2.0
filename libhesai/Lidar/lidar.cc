@@ -30,7 +30,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "lidar.h"
 #include <inttypes.h>
 #include <stdio.h>
-#include "Version.h"
+//#include "Version.h"
 #ifndef _MSC_VER
 #include <unistd.h>
 #endif
@@ -48,7 +48,6 @@ Lidar<T_Point>::Lidar() {
   mutex_list_ = new std::mutex[GetAvailableCPUNum()];
   handle_buffer_size_ = kPacketBufferSize;
   source_ = nullptr;
-  int a = 1;
 }
 
 template <typename T_Point>
