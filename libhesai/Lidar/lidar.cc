@@ -48,6 +48,7 @@ Lidar<T_Point>::Lidar() {
   mutex_list_ = new std::mutex[GetAvailableCPUNum()];
   handle_buffer_size_ = kPacketBufferSize;
   source_ = nullptr;
+  int a = 1;
 }
 
 template <typename T_Point>
